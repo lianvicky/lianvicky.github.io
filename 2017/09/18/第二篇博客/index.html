@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="John Doe"><link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>第二篇博客 - Hexo</title><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script src="/js/jquery-3.1.1.min.js"></script><script src="/js/fancybox/jquery.fancybox.min.js"></script></head><body style="opacity:0;"><header class="head"><h1 class="head-title u-fl"><a href="/">Hexo</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/archives">カタログ/（目录）</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"> <time class="post__time" datetime="2017-09-18T14:06:06.000Z">September 18, 2017</time><h1 class="post__title"><a href="/2017/09/18/第二篇博客/">第二篇博客</a></h1><div class="post__main echo"><h2 id="图片裁切"><a href="#图片裁切" class="headerlink" title="图片裁切"></a>图片裁切</h2><p>jCrop</p>
+<ol>
+<li>引入css文件</li>
+<li>引入jquery</li>
+<li>引入插件js</li>
+<li>创建一个图片标签</li>
+<li>在这个图片标签上调用 $(“#target”).jcrop()</li>
+</ol>
+<p>设置项：</p>
+<ol>
+<li>setSelect :  [x, y, w, h]   设置默认选区</li>
+<li>aspectRatio:      设置选区的宽高比</li>
+<li>bgColor</li>
+<li>bgOpacity</li>
+<li>maxSize minSize</li>
+<li>boxHeight</li>
+<li>boxWidth</li>
+</ol>
+<p>获取选区位置<br>要注册事件，只有在事件中才能拿到</p>
+<p>要给图片标签的父元素注册事件 cropstart cropmove cropend</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#box"</span>).on(<span class="string">"cropstart cropmove"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e, selection, coords</span>)</span>&#123;</div><div class="line">    <span class="comment">//coords中包含我们所需要的选区的坐标信息 x, y, w, h</span></div><div class="line"></div><div class="line">    <span class="comment">//如果要用这个选区信息</span></div><div class="line">    <span class="comment">//1. 设置全局变量，在这个事件中为全局变量赋值</span></div><div class="line">    <span class="comment">//2. 可以创建一个表单，在这个而事件中为表单元素赋值</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure></div></header></article><div class="comments" id="lv-container" data-id="city" data-uid="your uid"><script>(function(d, s) {var j, e = d.getElementsByTagName(s)[0];if (typeof LivereTower === 'function') { return; } j = d.createElement(s);j.src = 'https://cdn-city.livere.com/js/embed.dist.js';j.async = true;e.parentNode.insertBefore(j, e);})(document, 'script');</script></div></main><footer class="foot"><div class="foot-copy">&copy; 2016-2017 John Doe</div></footer><script src="/js/scroller.js"></script><script src="/js/main.js"></script></body></html>
