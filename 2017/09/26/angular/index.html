@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="angularjs是什么?一款非常优秀的前端高级JS框架
+  由谷歌团队负责开发维护
+帮助我们快速构建单页面应用
+其核心是通过指令扩展了HTML，通过表达式绑定数据到HTML
+基本指令
+ng-app 相当于入口函数
+
+ng-model  表单赋值 可以实现双向数据绑定 不能写在div,span等非表" />
+  
+
+  
+  
+  
+  
+  
+  
+  <title>angular | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="angularjs是什么?一款非常优秀的前端高级JS框架   由谷歌团队负责开发维护 帮助我们快速构建单页面应用 其核心是通过指令扩展了HTML，通过表达式绑定数据到HTML 基本指令 ng-app 相当于入口函数  ng-model  表单赋值 可以实现双向数据绑定 不能写在div,span等非表单元素中  ng-click  点击事件 只能写angular代码  ng-init=”变量名=变量">
+<meta property="og:type" content="article">
+<meta property="og:title" content="angular">
+<meta property="og:url" content="http://yoursite.com/2017/09/26/angular/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="angularjs是什么?一款非常优秀的前端高级JS框架   由谷歌团队负责开发维护 帮助我们快速构建单页面应用 其核心是通过指令扩展了HTML，通过表达式绑定数据到HTML 基本指令 ng-app 相当于入口函数  ng-model  表单赋值 可以实现双向数据绑定 不能写在div,span等非表单元素中  ng-click  点击事件 只能写angular代码  ng-init=”变量名=变量">
+<meta property="og:updated_time" content="2017-09-26T11:26:16.243Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="angular">
+<meta name="twitter:description" content="angularjs是什么?一款非常优秀的前端高级JS框架   由谷歌团队负责开发维护 帮助我们快速构建单页面应用 其核心是通过指令扩展了HTML，通过表达式绑定数据到HTML 基本指令 ng-app 相当于入口函数  ng-model  表单赋值 可以实现双向数据绑定 不能写在div,span等非表单元素中  ng-click  点击事件 只能写angular代码  ng-init=”变量名=变量">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+</head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="Hexo" rel="home">Hexo</a>
+      </h1>
+      
+        <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
+        <h2 class="site-description"><script>hitokoto();</script></h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="about-angular" class="about-angular post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      angular
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/09/26/angular/" data-id="cj81ioj1m0000i4vkkokvj5ip" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="angularjs是什么"><a href="#angularjs是什么" class="headerlink" title="angularjs是什么?"></a>angularjs是什么?</h1><p>一款非常优秀的前端高级JS框架</p>
+<p>  由谷歌团队负责开发维护</p>
+<p>帮助我们快速构建单页面应用</p>
+<p>其核心是通过指令扩展了HTML，通过表达式绑定数据到HTML</p>
+<h2 id="基本指令"><a href="#基本指令" class="headerlink" title="基本指令"></a>基本指令</h2><ul>
+<li><p>ng-app 相当于入口函数</p>
+</li>
+<li><p>ng-model  表单赋值 可以实现双向数据绑定 不能写在div,span等非表单元素中</p>
+</li>
+<li><p>ng-click  点击事件 只能写angular代码</p>
+</li>
+<li><p>ng-init=”变量名=变量值”  初始化数据 写在哪均可，多个可以用;隔开，变量值若是字符串，必须加””</p>
+</li>
+<li><p>ng-class =”{‘类名1’:布尔值1,’类名2’:布尔值2}”</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-class</span>=<span class="string">"&#123;'active':chk&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>​</p>
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><p>1.引入文件<br>2.创建模块 angular.module(“模块名”,[“依赖项1”,”依赖项2”])<br> 返回一个模块对象<br> 无依赖项时写一个空数组[],若没有第二个参数是获取模块<br>3.在html中加入 ng-app=”模块名”  有了控制器后别忘了加模块名（因为无控制器名时没有模块名也能执行）<br>4.创建控制器 模块对象.controller(“控制器名”,function($scope){ $scope.val=””})<br> $scope专向控制区域暴露数据<br>这样代码压缩会有问题，需要用安全的方式创建<br>模块对象.controller(“控制器名”,[“$scope”,function($scope){ $scope.val=””}])  第二个参数是数组，<br>前面的字符串需要与后面的形参一一对应，少一个会报错<br>5.在html相应区域代码中加入控制器名  ng-controller=”控制器名”</p>
+<h2 id="路由传递参数"><a href="#路由传递参数" class="headerlink" title="路由传递参数"></a>路由传递参数</h2><p>1.引入angular_route.js文件</p>
+<p>2.在应用模块中依赖该模块  angular.module(“模块名”,[“ngRoute”])</p>
+<p>3.配置路由</p>
+<p> 模块对象.config(function($routeProvider){</p>
+<p>​        $routeProvider</p>
+<p>​           .when(“锚点值”,{   //锚点值必须无# 以/开头  如/index</p>
+<p>​             Template:”<div>模板内容</div>”    </p>
+<p>​             (templateUrl:”文件路径” </p>
+<p>TemplateUrl:”模板id”)   模板的type是text/ng-template</p>
+<p>Controller:”控制器名”  //一般有路由配置时，controller不写在html中</p>
+<p>})</p>
+<p>.when()</p>
+<p>.otherwise(“/index”) 如果上面都不匹配，就跳到主页面</p>
+<p>})</p>
+<p>4.template内容需要放到页面中，在页面需要的地方加上ng-view</p>
+<p>5.在.when(“/article/:id”)  在路由中配置占位符 多个时用 /:属性名 接着写</p>
+<p>6.在链接中配置正则的实参 href=”#!/article/1”   需要加！ </p>
+<p>7.获取传递过来的参数 在控制器中获取</p>
+<p>  .controller(“控制器名”,function($routeParams,$scope){</p>
+<p>   $scope.msg=$routeParams[“id”];</p>
+<p>})</p>
+<p>​</p>
+</li>
+</ul>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2017/09/26/angular/">
+    <time datetime="2017-09-26T11:18:32.000Z" class="entry-date">
+        2017-09-26
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+    
+        <span class="nav-next"><a href="/2017/09/18/第二篇博客/" rel="next">第二篇博客 <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2017/09/26/angular/">angular</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/18/第二篇博客/">第二篇博客</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/17/有内容的第一篇博客/">有内容的第一篇博客</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/17/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  
+    
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2017 John Doe
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
